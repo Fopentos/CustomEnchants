@@ -1,0 +1,21 @@
+name: CustomEnchants
+version: 1.0
+main: com.example.customenchants.Main
+api-version: 1.16
+softdepend: [Vault]
+commands:
+  ce:
+    description: CustomEnchants main command
+    permission: customenchants.admin
+    usage: "/ce help"
+  enchanter:
+    description: Open enchanter GUI
+    permission: customenchants.use
+    usage: "/enchanter"
+permissions:
+  customenchants.admin:
+    description: Access to admin commands
+    default: op
+  customenchants.use:
+    description: Access to use enchantments and NPC
+    default: true
