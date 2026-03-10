@@ -1,0 +1,85 @@
+# Настройки зелий
+potions:
+  cleansing:
+    radius: 4.0
+    craft:
+      enabled: true
+      ingredients: ["SPLASH_POTION", "MILK_BUCKET"]
+  immunity:
+    duration: 60
+    craftable: false
+    color: "GOLD"
+
+# Основные зачарования (8 эффектов)
+enchantments:
+  max-per-item: 8
+  levels:
+    1:
+      chance: 10
+      duration: 1.0
+    2:
+      chance: 15
+      duration: 1.5
+    3:
+      chance: 25
+      duration: 2.0
+    4:
+      chance: 30
+      duration: 2.5
+    5:
+      chance: 45
+      duration: 3.0
+  effects:
+    WITHER:
+      levels: [1,2,3,3,3]
+    POISON:
+      levels: [1,2,3,3,3]
+    BLINDNESS:
+      levels: [1,1,1,1,1]
+    NAUSEA:
+      levels: [1,1,1,1,1]
+    SLOWNESS:
+      levels: [1,2,3,3,3]
+    MINING_FATIGUE:
+      levels: [1,2,3,3,3]
+    WEAKNESS:
+      levels: [1,2,3,3,3]
+    HUNGER:
+      levels: [1,2,3,3,3]
+
+# Вампиризм
+vampirism:
+  cooldown: 1.0
+  level1:
+    chance: 25
+    health: 2.0
+  level2:
+    chance: 20
+    health: 3.0
+
+# NPC система
+npc:
+  gui-title: "&8Мастер древних чар"
+  base-prices:
+    level1: 500
+    level2: 2000
+    level3: 8000
+    level4: 25000
+    level5: 100000
+  price-multiplier: 2.5
+  villager-name: "&c&lЗачарователь"
+
+# Сообщения
+messages:
+  no-money: "&cУ вас недостаточно денег! Нужно: %price%"
+  success: "&aЗачарование успешно наложено!"
+  max-enchants: "&cНа этом предмете уже максимальное количество зачарований!"
+  cooldown: "&cПодождите %time% сек перед следующим использованием вампиризма!"
+  only-players: "&cТолько игроки могут использовать эту команду."
+  no-permission: "&cУ вас нет прав."
+  book-given: "&aКнига выдана игроку %player%."
+  reloaded: "&aКонфигурация перезагружена."
+  usage: "&cИспользование: /ce givebook <игрок> <эффект> <уровень> | /ce reload"
+  invalid-enchant: "&cНеизвестное зачарование."
+  invalid-level: "&cНеверный уровень. От 1 до 5 (Вампиризм: 1-2)."
+  player-not-found: "&cИгрок не найден."
